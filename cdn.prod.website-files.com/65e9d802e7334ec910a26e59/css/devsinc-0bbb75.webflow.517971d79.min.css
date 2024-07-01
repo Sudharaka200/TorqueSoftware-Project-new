@@ -10776,6 +10776,18 @@ figure {
     background-position: center; /* Center the image */
     background-repeat: no-repeat; 
 }
+.background-service5{
+  background-image: url('../../../Images/Untitled-5.png');
+  background-size: cover; /* Make sure the image covers the entire background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; 
+}
+.background-service6{
+  background-image: url('../../../Images/Untitled-7.png');
+  background-size: cover; /* Make sure the image covers the entire background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; 
+}
 
 
 
