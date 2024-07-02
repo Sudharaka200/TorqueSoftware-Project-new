@@ -23,7 +23,25 @@
     href="../cdn.prod.website-files.com/65e9d802e7334ec910a26e59/css/devsinc-0bbb75.webflow.517971d79.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <style>
+    @keyframes appear{
+      from{
+        opacity: 0;
+        scale: 0.5;
+      }
+      to{
+        opacity: 1;
+        scale: 1;
+      }
+    }
+    .block{
+      animation: appear linear;
+      animation-timeline: view();
+      animation-range: entry 0 cover 40%;
+    }
+  </style>
   <script src="../ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">
     WebFont.load({
@@ -193,24 +211,24 @@
     </div>
   </div>
   <div class="home-banner-section">
-    <div class="w-layout- -7 w-container">
+    <div class="w-layout-blockcontainer container-7 w-container">
       <div class="banner-text-wrapper">
-        <div class="">Custom software built for your business and built to last.
+        <div class="header-banner-w-underline animate__animated animate__fadeInDown">Custom software built for your business and built to last.
         </div>
-        <p class="">We create custom software for forward-thinking businesses, helping them accelerate growth and become technology leaders.</p>
-        <div class="banner-buttons-wrap"><a href="contactUs.html" class="button-primary-white w-inline-block">
+        <p class="paragraph-large-black animate__animated animate__fadeInUp">We create custom software for forward-thinking businesses, helping them accelerate growth and become technology leaders.</p>
+        <div class="banner-buttons-wrap"><a href="contactUs.html" class="button-primary-white w-inline-block animate__animated animate__fadeInUp">
             <div class="text-block-16">Contact Us</div>
           </a></div>
       </div>
     </div>
   </div>
   <section class="section-logos gray">
-    <div class="w-layout-bing w-container">
+    <div class="w-layout-blockcontainer base-container no-padding w-container">
     </div>
   </section>
   <div class="section no-top-padding">
     <div class="base-container w-container">
-      <h2 class="text-center big-heading-blue">Services</h2>
+      <h2 class="text-center big-heading-blue block animate__animated animate__fadeInDown">Services</h2>
       <div class="other-services-collection w-dyn-list">
         <div role="list" class="other-services-collection-list w-dyn-items">
           <div data-w-id="b52b3510-878f-51aa-b379-4e286b0a684b" role="listitem"
@@ -221,8 +239,8 @@
                 <div class="w-layout-cell cell-15"><img
                     src="../cdn.prod.website-files.com/65e9d803e7334ec910a26f07/6671de247c0baad125ec99be_Web%20Development.png"
                     loading="lazy" alt="" class="icon-image" /></div>
-                <div class="w-layout-cell">
-                  <h2 data-w-id="b52b3510-878f-51aa-b379-4e286b0a684d" class="heading-6">Web Application Development</h2>
+                <div class="w-layout-cell animate__animated animate__fadeInDown block">
+                  <h2 data-w-id="b52b3510-878f-51aa-b379-4e286b0a684d" class="heading-6 ">Web Application Development</h2>
                   <p class="main-website-paragraph">We build powerful web applications to solve complex business problems.</p>
                 </div>
               </div>
@@ -238,8 +256,8 @@
                 <div class="w-layout-cell cell-15"><img
                     src="../cdn.prod.website-files.com/65e9d803e7334ec910a26f07/6671de4472f466c6ec3a3300_Digital%20Transformation.png"
                     loading="lazy" alt="" class="icon-image" /></div>
-                <div class="w-layout-cell">
-                  <h2 data-w-id="b52b3510-878f-51aa-b379-4e286b0a684d" class="heading-6">Front End Development</h2>
+                <div class="w-layout-cell animate__animated animate__fadeInDown block">
+                  <h2 data-w-id="b52b3510-878f-51aa-b379-4e286b0a684d" class="heading-6 ">Front End Development</h2>
                   <p class="main-website-paragraph">Sleek, responsive Front-End Development. Not only for you-but for your users</p>
                 </div>
               </div>
@@ -247,16 +265,16 @@
             <div class="hover-line"></div>
             <div class="gray-line"></div>
           </div>
-          <div data-w-id="b52b3510--51aa-b379-4e286b0a684b" role="listitem"
+          <div data-w-id="b52b3510-878f-51aa-b379-4e286b0a684b" role="listitem"
             class="other-services-collection-item w-dyn-item"><a href="mobile-app-development.html"
               class="service-link w-inline-block">
               <div id="w-node-d9021665-e8c4-5e00-bacf-8d277c2319e6-6b0a6843"
                 class="w-layout-layout quick-stack-12 wf-layout-layout">
-                <div class="w-layout-cell -15"><img
+                <div class="w-layout-cell cell-15"><img
                     src="../cdn.prod.website-files.com/65e9d803e7334ec910a26f07/6671ddfeb123a3a3d48768f6_Generative%20AI.png"
                     loading="lazy" alt="" class="icon-image" /></div>
-                <div class="w-layout-cell">
-                  <h2 data-w-id="b52b3510-878f-51aa-b379-" class="heading-6">Mobile App Development</h2>
+                <div class="w-layout-cell animate__animated animate__fadeInDown block">
+                  <h2 data-w-id="b52b3510-878f-51aa-b379-4e286b0a684d" class="heading-6">Mobile App Development</h2>
                   <p class="main-website-paragraph">Handcrafted apps to streamline all of your processes and drive customer engagement</p>
                 </div>
               </div>
@@ -276,7 +294,7 @@
       <div class="pricing-text-wrapper">
         <div class="pricing-2-grid">
           <div class="w-layout-grid grid-2">
-            <div id="w-node-_1eaca854-9b72-b829-6dbb-77b105922315-814c57be" class="pricing-left-wrapper">
+            <div id="w-node-_1eaca854-9b72-b829-6dbb-77b105922315-814c57be" class="pricing-left-wrapper block animate__animated animate__fadeInLeft">
               <img src="../Images/lets-celebrate.png" alt="">
               <div class="w-layout-hflex pricing-stats-wrap">
                 <div class="w-layout-vflex pricing-stats">
@@ -287,17 +305,17 @@
             <div id="w-node-_18f4b41b-a679-9199-7405-e530ca982474-814c57be" class="pricing-right-wrapper">
               <div id="w-node-_23b0f10a-550c-bc2e-2bee-a7106a120e35-814c57be"
                 class="w-layout-layout quick-stack-13 wf-layout-layout">
-                <div id="w-node-_23b0f10a-550c-bc2e-2bee-a7106a120e36-814c57be" class="w-layout-cell">
-                  <h3>Let Us Create Your Software</h3>
+                <div id="w-node-_23b0f10a-550c-bc2e-2bee-a7106a120e36-814c57be" class="w-layout-cell block animate__animated animate__fadeInRight">
+                  <h3 >Let Us Create Your Software</h3>
                 </div>
                 <div id="w-node-_5cf0a0c2-346b-5e95-d36b-54550790f6b8-814c57be" class="w-layout-cell cell-16">
-                  <p class="main-website-paragraph">Creating your software can be tough and frustrating. Outsource your software project to Torque-Software instead. Let us design and develop the software you need while you focus on your other priorities.</p>
+                  <p class="main-website-paragraph animate__fadeInUp block animate__animated">Creating your software can be tough and frustrating. Outsource your software project to Torque-Software instead. Let us design and develop the software you need while you focus on your other priorities.</p>
                 </div>
               </div>
               <div id="w-node-_5e799270-20aa-bd81-e110-91499e3f8d58-814c57be"
                 class="w-layout-layout quick-stack-14 wf-layout">
                 <div id="w-node-_23b0f10a-550c-bc2e-2bee-a7106a120e37-814c57be" class="w-layout-cell"><a
-                  href="contactUs.html" class="button-primary pricing w-inline-block">
+                  href="contactUs.html" class="button-primary pricing w-inline-block animate__fadeInUp block animate__animated">
                   <div class="text-block-19">Contact Us →</div></a>
                 </div>
               </div>
@@ -312,8 +330,8 @@
 <div class="section bg-working-process">
   <div class="base-container w-container">
     <div class="working-process-wrap">
-      <div class="section-title-wrapp-working-process">
-        <h2 class="text-white text-white-45">Technologies</h2>
+      <div class="section-title-wrapp-working-process ">
+        <h2 class="text-white text-white-45 ">Technologies</h2>
       </div>
       <div class="w-layout-grid flex-stages">
         <div class="process-item right-margin">
@@ -361,6 +379,7 @@
       </div>
     </div>
   </div>
+  </div>
   <div id="Form" class="section-small">
     <div class="small-container w-container"></div>
     <div class="w-layout-blockcontainer main-container w-container">
@@ -369,53 +388,59 @@
         </div>
           <div class="title-wrap-left">
            <div class="section no-top-padding">
-            <div class="base-container w-container">
-            <h2 class="section-title">Why Choose Us</h2>
+            <div class="base-container w-container ">
+            <h2 class="section-title block animate__animated animate__zoomIn">Why Choose Us</h2>
             <section class="section without-space">
               <div class="w-layout-blockcontainer base-container w-container">
                 <div class="w-layout-hflex flex-align-center flex-block-10"><img
                   src="https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/6602f056ab770ca8f1903fc8_Transparency.webp"
                   loading="lazy" sizes="(max-width: 479px) 100vw, 252.328125px"
                   srcset="https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/6602f056ab770ca8f1903fc8_Transparency-p-500.webp 500w, https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/6602f056ab770ca8f1903fc8_Transparency.webp 750w"
-                  alt="" class="why-we-are-better-copy" />
+                  alt="" class="why-we-are-better-copy block animate__animated block animate__animated" />
                   <div class="image-gradient"></div>
                   <div class="text-block-wrap">
-                    <h4 class="h4">Experts on call</h4>
-                    <p>
+                    <h4 class="h4 block animate__animated animate__zoomIn">Experts on call</h4>
+                    <p class="block animate__animated animate__zoomIn">
                       Each employee on your team at least three years of experience in his or her field. Each has been thoroughly vetted to prevent mistakes or privacy issues. And each is supervised by a technical lead. So you won’t run into any issues with quality or missed deadlines.</p>
                   </div>
                 </div>
               </div>
-            </section>
-            <div class="section overflow-hidden">
+              </section>
+              </div>
+            <div class="section overflow-hidden block animate__animated animate__zoomIn">
               <div class="base-container w-container">
                 <div class="wrapper-subheading">
                 </div>
                 <div class="features-flex-wrap">
                   <div class="w-layout-hflex values-flex-box">
                     <div class="feature-text-wrap">
-                      <h4 class="h4">Custom team building</h4>
-                      <p>We pair you with developers and designers whose talents specifically match your individual needs. We don’t try to hit you with setup costs, so you’ll only pay for the work done. In fact, you get to choose whether to hire your developers on a full-time or hourly basis. Plus, we provide free project management tools to communicate and get in sync with your team.</p>
+                      <h4 class="h4 block animate__animated animate__zoomIn">Custom team building</h4>
+                      <p class="block animate__animated animate__zoomIn">We pair you with developers and designers whose talents specifically match your individual needs. We don’t try to hit you with setup costs, so you’ll only pay for the work done. In fact, you get to choose whether to hire your developers on a full-time or hourly basis. Plus, we provide free project management tools to communicate and get in sync with your team.</p>
                     </div>
                     <div class="values-image right"><img
                         src="https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/6602f055690ba8b563a686e1_Innovation.webp"
                         loading="lazy" sizes="(max-width: 479px) 100vw, 252.328125px"
                         srcset="https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/6602f055690ba8b563a686e1_Innovation-p-500.webp 500w, https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/6602f055690ba8b563a686e1_Innovation.webp 750w"
-                        alt="" class="why-we-are-better-copy" />
+                        alt="" class="why-we-are-better-copy block animate__animated animate__zoomIn" />
                       <div class="image-gradient"></div>
                     </div>
                   </div>
+                </div>
+               </div>
+              </div>
+
+
                   <div class="w-layout-hflex values-flex-box reverse">
                     <div class="values-image"><img
                         src="https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/6602f0550eb8336edd2d8310_Adaptability.webp"
                         loading="lazy" sizes="(max-width: 479px) 100vw, 252.328125px"
                         srcset="https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/6602f0550eb8336edd2d8310_Adaptability-p-500.webp 500w, https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/6602f0550eb8336edd2d8310_Adaptability.webp 750w"
-                        alt="" class="why-we-are-better-copy" />
+                        alt="" class="why-we-are-better-copy block animate__animated animate__zoomIn" />
                       <div class="image-gradient"></div>
                     </div>
                     <div class="feature-text-wrap">
-                      <h4 class="h4">Quality guarantee</h4>
-                      <p>All of this is backed with ironclad NDAs. We don’t share the nature of your work with anyone. Transparency is a given, and we share detailed timesheets and work reports. And finally, you get a no-questions -asked money back guarantee. Cancel at any time</p>
+                      <h4 class="h4 block animate__animated animate__zoomIn">Quality guarantee</h4>
+                      <p class="block animate__animated animate__zoomIn">All of this is backed with ironclad NDAs. We don’t share the nature of your work with anyone. Transparency is a given, and we share detailed timesheets and work reports. And finally, you get a no-questions -asked money back guarantee. Cancel at any time</p>
                     </div>
                   </div>
 
@@ -432,7 +457,7 @@
       <div class="text-wrap-center-block-cta">
         </div>
     </div>
-    <div class="images-gallery mt-70">
+    <div class="images-gallery mt-70" style="margin-top: -80px;">
       <div class="home-2-image-wrap-2"><img
           src="https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/65e9d803e7334ec910a26fac_CTA Image 1.webp"
           loading="lazy" alt="Our work" class="cta-image rotate-left-10" /></div>

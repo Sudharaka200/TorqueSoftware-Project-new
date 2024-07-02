@@ -19,6 +19,24 @@
   <link href="https://fonts.googleapis.com/" rel="preconnect" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="anonymous" />
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+        @keyframes appear{
+      from{
+        opacity: 0;
+        scale: 0.5;
+      }
+      to{
+        opacity: 1;
+        scale: 1;
+      }
+    }
+    .block{
+      animation: appear linear;
+      animation-timeline: view();
+      animation-range: entry 0 cover 40%;
+    }
+  </style>
   <script src="../ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script
     type="text/javascript">WebFont.load({ google: { families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic", "Inter:regular,500,600,700"] } });</script>
@@ -174,7 +192,7 @@
     <div class="w-layout-blockcontainer base-container-2 w-container">
       <div class="header-wrapper-center-2 mw-800">
         <div id="w-node-_13b58d4e-51fa-dfe4-a914-06a69613640b-10a26ee5" class="header-banner-wrap center">
-          <h1 class="white-text-2 text-center">Web Application Development</h1>
+          <h1 class="white-text-2 text-center animate__animated animate__bounceInDown">Web Application Development</h1>
         </div>
       </div>
     </div>
@@ -188,10 +206,10 @@
         <div class="service-details-content">
           <div class="service-details-content-wrapper">
             <div class="rich-text-style w-richtext">
-              <h2>Services</h2>
-              <p>Regardless of how complex or even small your needs are , our dedicated in-house team of developers and project managers will ensure that the job gets done with the highest level of professionalism and most cost affordably.</p>
+              <h2 class="block animate__animated animate__zoomIn">Services</h2>
+              <p class="block animate__animated animate__zoomIn">Regardless of how complex or even small your needs are , our dedicated in-house team of developers and project managers will ensure that the job gets done with the highest level of professionalism and most cost affordably.</p>
             </div>
-            <div class="service-includes"><img alt="work" loading="lazy"
+            <div class="service-includes block animate__animated animate__zoomIn"><img alt="work" loading="lazy"
                 src="https://cdn.prod.website-files.com/65e9d803e7334ec910a26f07/6601698cb7dff0363a482d7d_Web Development Service.webp"
                 sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 93vw, (max-width: 1279px) 48vw, 585px"
                 srcset="https://cdn.prod.website-files.com/65e9d803e7334ec910a26f07/6601698cb7dff0363a482d7d_Web%20Development%20Service-p-500.webp 500w, https://cdn.prod.website-files.com/65e9d803e7334ec910a26f07/6601698cb7dff0363a482d7d_Web%20Development%20Service-p-800.webp 800w, https://cdn.prod.website-files.com/65e9d803e7334ec910a26f07/6601698cb7dff0363a482d7d_Web%20Development%20Service.webp 1080w"
@@ -209,7 +227,7 @@
                 </ul>
               </aside>
             </div>
-            <div class="rich-text-style service-benefit-sec w-richtext">
+            <div class="rich-text-style service-benefit-sec w-richtext block animate__animated animate__zoomIn">
               <ul role="list">
                 <li><strong>CMS based Websites:</strong> Our developers have experience building websites for almost every industry and on almost every platform including WordPress, Drupal and Joomla.
                 </li>
@@ -223,58 +241,44 @@
               </ul>
               <br><br>
               <div>
-                <h3 class="text-center big-heading-blue">Technologies</h3>
-                <p class="text-center">Languages & Frameworks</p>
-                <!-- <center>
-                  <img src="../Images/php-2.png" alt="">
-                  <img src="../Images/dotnet.png" alt="">
-                  <img src="../Images/java-1.png" alt="">
-                  <img src="../Images/python-1.png" alt="">
-                </center> -->
-
-<section class="section-logos ">
-  <div class="w-layout-blockcontainer base-container no-padding w-container">
-    <div class="logo-overflow-hidden">
-      <div data-w-id="6035d50d-1a26-3fff-9114-9a4b6d741ea0" class="client-logo-wrapper"
-        style="transform: translate3d(-669.208px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);  will-change: transform;">
-        <img
-          src="../Images/php-2.png"
-          loading="lazy" alt="logo" class="company-logo"><img
-          src="../Images/dotnet.png"
-          loading="lazy" alt="" class="company-logo"><img
-          src="../Images/java-1.png"
-          loading="lazy" alt="" class="company-logo"><img
-          src="../Images/python-1.png"
-          loading="lazy" alt="" class="company-logo">
-          <img
-          src="../Images/php-2.png"
-          loading="lazy" alt="logo" class="company-logo"><img
-          src="../Images/dotnet.png"
-          loading="lazy" alt="" class="company-logo"><img
-          src="../Images/java-1.png"
-          loading="lazy" alt="" class="company-logo"><img
-          src="../Images/python-1.png"
-          loading="lazy" alt="" class="company-logo">
-          <img
-          src="../Images/php-2.png"
-          loading="lazy" alt="logo" class="company-logo"><img
-          src="../Images/dotnet.png"
-          loading="lazy" alt="" class="company-logo"><img
-          src="../Images/java-1.png"
-          loading="lazy" alt="" class="company-logo"><img
-          src="../Images/python-1.png"
-          loading="lazy" alt="" class="company-logo">
-        </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
+                <h3 class="text-center big-heading-blue block animate__animated animate__zoomIn">Technologies</h3>
+                <p class="text-center block animate__animated animate__zoomIn">Languages & Frameworks</p>
+            <section class="section-logos ">
+              <div class="w-layout-blockcontainer base-container no-padding w-container">
+                <div class="logo-overflow-hidden">
+                  <div data-w-id="6035d50d-1a26-3fff-9114-9a4b6d741ea0" class="client-logo-wrapper"
+                    style="transform: translate3d(-669.208px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);  will-change: transform;">
+                    <img
+                      src="../Images/php-2.png"
+                      loading="lazy" alt="logo" class="company-logo"><img
+                      src="../Images/dotnet.png"
+                      loading="lazy" alt="" class="company-logo"><img
+                      src="../Images/java-1.png"
+                      loading="lazy" alt="" class="company-logo"><img
+                      src="../Images/python-1.png"
+                      loading="lazy" alt="" class="company-logo">
+                      <img
+                      src="../Images/php-2.png"
+                      loading="lazy" alt="logo" class="company-logo"><img
+                      src="../Images/dotnet.png"
+                      loading="lazy" alt="" class="company-logo"><img
+                      src="../Images/java-1.png"
+                      loading="lazy" alt="" class="company-logo"><img
+                      src="../Images/python-1.png"
+                      loading="lazy" alt="" class="company-logo">
+                      <img
+                      src="../Images/php-2.png"
+                      loading="lazy" alt="logo" class="company-logo"><img
+                      src="../Images/dotnet.png"
+                      loading="lazy" alt="" class="company-logo"><img
+                      src="../Images/java-1.png"
+                      loading="lazy" alt="" class="company-logo"><img
+                      src="../Images/python-1.png"
+                      loading="lazy" alt="" class="company-logo">
+                    </div>
+                </div>
+              </div>
+            </section>
                 <br><br>
               </div>
             </div>
@@ -289,7 +293,7 @@
           <div class="text-wrap-center-block-cta">
             </div>
         </div>
-        <div class="images-gallery mt-70">
+        <div class="images-gallery mt-70" style="margin-top: -80px;">
           <div class="home-2-image-wrap-2"><img
               src="https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/65e9d803e7334ec910a26fac_CTA Image 1.webp"
               loading="lazy" alt="Our work" class="cta-image rotate-left-10" /></div>
