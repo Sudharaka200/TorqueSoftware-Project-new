@@ -19,27 +19,22 @@
   <meta content="Webflow" name="generator" />
   <link href="../cdn.prod.website-files.com/65e9d802e7334ec910a26e59/css/devsinc-0bbb75.webflow.517971d79.min.css"
     rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://fonts.googleapis.com/" rel="preconnect" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <style>
-    @keyframes appear{
-  from{
-    opacity: 0;
-    scale: 0.5;
-  }
-  to{
-    opacity: 1;
-    scale: 1;
-  }
-}
-.block{
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
-}
-</style>
+    .block {
+        opacity: 0; /* Initially hidden */
+      }
+  
+      .appear {
+        opacity: 1; /* Show when the animation starts */
+      }
+  
+    </style>
+  
   <script src="../ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script
     type="text/javascript">WebFont.load({ google: { families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic", "Inter:regular,500,600,700"] } });</script>
@@ -191,11 +186,11 @@
       </div>
     </div>
   </div>
-  <div class="banner-section-price background-service3">
+  <div class="banner-section-price background-service3 block" data-animation="animate__slideInLeft">
     <div class="w-layout-blockcontainer base-container-2 w-container">
       <div class="header-wrapper-center-2 mw-800">
         <div id="w-node-_13b58d4e-51fa-dfe4-a914-06a69613640b-10a26ee5" class="header-banner-wrap center ">
-          <h1 class="white-text-2 text-center animate__animated animate__bounceInDown">Mobile App Development</h1>
+          <h1 class="white-text-2 text-center">Mobile App Development</h1>
         </div>
       </div>
     </div>
@@ -209,45 +204,45 @@
         <div class="service-details-content">
           <div class="service-details-content-wrapper">
             <div class="rich-text-style w-richtext">
-              <h2 class="block animate__animated animate__zoomIn ">Beautiful mobile apps for iOS and android</h2>
-              <p class="block animate__animated animate__zoomIn">If you’re serious about getting apps to improve the way your business operates, or launching high-end and beautiful mobile apps for iOS and Android, then you should know that there’s only one place you can get a dedicated team of skilled developers working exclusively on your vision: right here at Torque Software .</p>
+              <h2 class="block  " data-animation="animate__slideInLeft">Beautiful mobile apps for iOS and android</h2>
+              <p class="block " data-animation="animate__slideInRight">If you’re serious about getting apps to improve the way your business operates, or launching high-end and beautiful mobile apps for iOS and Android, then you should know that there’s only one place you can get a dedicated team of skilled developers working exclusively on your vision: right here at Torque Software .</p>
             </div>
-            <div id="w-node-a3cb7bba-c8ac-8224-74c2-303881c181c2-81c181ad" class=" quick-stack-5 wf-layout-layout ">
+            <div id="w-node-a3cb7bba-c8ac-8224-74c2-303881c181c2-81c181ad" class=" quick-stack-5 wf-layout-layout block" data-animation="animate__slideInUp">
               <div id="w-node-a3cb7bba-c8ac-8224-74c2-303881c181c3-81c181ad" class="w-layout-cell bullet-point-center" style="margin-bottom: -20px;">
                 <img src="https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/65eb674d6fbaf499a90bc776_Arrow%20Right.svg"
-                  loading="lazy" alt="" class="bullet-point-image block animate__animated animate__zoomIn">
+                  loading="lazy" alt="" class="bullet-point-image block ">
               </div>
               <div id="w-node-a3cb7bba-c8ac-8224-74c2-303881c181c5-81c181ad" class="w-layout-cell bullet-point-center" style="margin-bottom: -20px;">
-                <div class="curious-bullet-point block animate__animated animate__zoomIn"><p><strong>We work with you and your team on planning and strategy.</strong></p></div>
-              </div>
-              <div id="w-node-a3cb7bba-c8ac-8224-74c2-303881c181c3-81c181ad" class="w-layout-cell bullet-point-center" style="margin-bottom: -20px;">
-                <img src="https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/65eb674d6fbaf499a90bc776_Arrow%20Right.svg"
-                  loading="lazy" alt="" class="bullet-point-image block animate__animated animate__zoomIn">
-              </div>
-              <div id="w-node-a3cb7bba-c8ac-8224-74c2-303881c181c5-81c181ad" class="w-layout-cell bullet-point-center" style="margin-bottom: -20px;">
-                <div class="curious-bullet-point block animate__animated animate__zoomIn"><p><strong>We have hands on experience with both native and hybrid mobile apps.</strong></p></div>
+                <div class="curious-bullet-point block "><p><strong>We work with you and your team on planning and strategy.</strong></p></div>
               </div>
               <div id="w-node-a3cb7bba-c8ac-8224-74c2-303881c181c3-81c181ad" class="w-layout-cell bullet-point-center" style="margin-bottom: -20px;">
                 <img src="https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/65eb674d6fbaf499a90bc776_Arrow%20Right.svg"
-                  loading="lazy" alt="" class="bullet-point-image block animate__animated animate__zoomIn">
+                  loading="lazy" alt="" class="bullet-point-image block ">
               </div>
               <div id="w-node-a3cb7bba-c8ac-8224-74c2-303881c181c5-81c181ad" class="w-layout-cell bullet-point-center" style="margin-bottom: -20px;">
-                <div class="curious-bullet-point block animate__animated animate__zoomIn"><p><strong>We help you drive customer engagement and sales by building applications for purchase on the Apple and Google app stores</strong></p></div>
+                <div class="curious-bullet-point block "><p><strong>We have hands on experience with both native and hybrid mobile apps.</strong></p></div>
               </div>
               <div id="w-node-a3cb7bba-c8ac-8224-74c2-303881c181c3-81c181ad" class="w-layout-cell bullet-point-center" style="margin-bottom: -20px;">
                 <img src="https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/65eb674d6fbaf499a90bc776_Arrow%20Right.svg"
-                  loading="lazy" alt="" class="bullet-point-image block animate__animated animate__zoomIn">
+                  loading="lazy" alt="" class="bullet-point-image block ">
               </div>
               <div id="w-node-a3cb7bba-c8ac-8224-74c2-303881c181c5-81c181ad" class="w-layout-cell bullet-point-center" style="margin-bottom: -20px;">
-                <div class="curious-bullet-point block animate__animated animate__zoomIn"><p><strong>We custom-build, design, and deploy an enterprise app you can use to streamline and mobilize your inward-facing systems.</strong></p></div>
+                <div class="curious-bullet-point block "><p><strong>We help you drive customer engagement and sales by building applications for purchase on the Apple and Google app stores</strong></p></div>
+              </div>
+              <div id="w-node-a3cb7bba-c8ac-8224-74c2-303881c181c3-81c181ad" class="w-layout-cell bullet-point-center" style="margin-bottom: -20px;">
+                <img src="https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/65eb674d6fbaf499a90bc776_Arrow%20Right.svg"
+                  loading="lazy" alt="" class="bullet-point-image block ">
+              </div>
+              <div id="w-node-a3cb7bba-c8ac-8224-74c2-303881c181c5-81c181ad" class="w-layout-cell bullet-point-center" style="margin-bottom: -20px;">
+                <div class="curious-bullet-point block "><p><strong>We custom-build, design, and deploy an enterprise app you can use to streamline and mobilize your inward-facing systems.</strong></p></div>
               </div>
               </div>
-            <div class="service-includes block animate__animated animate__zoomIn"><img alt="work" loading="lazy"
+            <div class="service-includes"><img alt="work" loading="lazy"
                 src="https://cdn.prod.website-files.com/65e9d803e7334ec910a26f07/6601698cb7dff0363a482d7d_Web Development Service.webp"
                 sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 93vw, (max-width: 1279px) 48vw, 585px"
                 srcset="https://cdn.prod.website-files.com/65e9d803e7334ec910a26f07/6601698cb7dff0363a482d7d_Web%20Development%20Service-p-500.webp 500w, https://cdn.prod.website-files.com/65e9d803e7334ec910a26f07/6601698cb7dff0363a482d7d_Web%20Development%20Service-p-800.webp 800w, https://cdn.prod.website-files.com/65e9d803e7334ec910a26f07/6601698cb7dff0363a482d7d_Web%20Development%20Service.webp 1080w"
-                class="service-image " />
-              <aside class="rich-text-style-services w-richtext">
+                class="service-image block" data-animation="animate__slideInLeft" />
+              <aside class="rich-text-style-services w-richtext block" data-animation="animate__slideInRight">
                 <h5>Mobile App Development Technologies</h5>
                 <ul role="list">
                   <li>iOS/iPhone APP Development</li>
@@ -259,11 +254,11 @@
             </div>
             <div class="rich-text-style service-benefit-sec w-richtext">
               <br>
-              <div class="base-container w-container ">
+              <div class="base-container w-container block" data-animation="animate__slideInRight">
                 <div class="w-layout-grid location-grid">
                   <div id="w-node-_97549f31-8dfc-6d35-7368-44e29c229085-9c229082" class="location-image-block">
                     <div id="w-node-abf7c0ab-89e0-3f09-e85d-41e55410a9de-9c229082" class="locations-wrapper">
-                      <div class="location-text block animate__animated animate__zoomIn">
+                      <div class="location-text">
                         <img src="../Images/graphic-design.png" alt="">
                         <div class="location-header">Design</div>
                         <p>We design the first class apps that bring customers to your brand and keep them their for life.</p>
@@ -271,14 +266,14 @@
                     </div>
                   </div>
                   <div id="w-node-_97549f31-8dfc-6d35-7368-44e29c229087-9c229082" class="location-image-block">
-                    <div class="location-text block animate__animated animate__zoomIn">
+                    <div class="location-text">
                       <img src="../Images/graphic-develop.png" alt="">
                       <div class="location-header">Develop</div>
                       <p>We develop sophisticated, highly functional apps that work for you, and work for your customers just as well.</p>
                     </div>
                   </div>
                   <div id="w-node-_97549f31-8dfc-6d35-7368-44e29c229089-9c229082" class="location-image-block">
-                    <div class="location-text block animate__animated animate__zoomIn">
+                    <div class="location-text">
                       <img src="../Images/graphic-deliver.png" alt="">
                       <div class="location-header">Deliver</div>
                       <p>We’re there to help from inception to delivery and will get your app easily onto the marketplace.</p>
@@ -292,7 +287,7 @@
              </div>
            </div>
          </div>
-         <div class="section without-bottom-spacing">
+         <div class="section without-bottom-spacing block" data-animation="animate__fadeIn">
           <div class="base-container w-container">
             <div class="values-wrapper">
               <div class="advantages-wrapper-2-1 ">
@@ -445,6 +440,34 @@
             </div>
           </div>
         </div>
+        
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const blocks = document.querySelectorAll('.block');
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5 // Trigger when 50% of the element is in view
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const animationClass = entry.target.getAttribute('data-animation');
+          entry.target.classList.add('animate__animated', animationClass);
+          entry.target.classList.add('appear');
+          observer.unobserve(entry.target); // Stop observing once animated
+        }
+      });
+    }, observerOptions);
+
+    blocks.forEach(block => {
+      observer.observe(block);
+    });
+  });
+</script>
+
+
         <script src="../d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8d876.js?site=65e9d802e7334ec910a26e59"
           type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
           crossorigin="anonymous"></script>

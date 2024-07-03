@@ -32,6 +32,17 @@
     rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/" rel="preconnect" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    .block {
+        opacity: 0; /* Initially hidden */
+      }
+  
+      .appear {
+        opacity: 1; /* Show when the animation starts */
+      }
+  
+    </style>
   <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="anonymous" />
   <script src="../ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script
@@ -188,11 +199,11 @@
     <div class="w-layout-blockcontainer base-container w-container">
       <div class="home-3-banner-wrapper">
         <div class="about-us-text-container">
-          <h1 class="heading-11">We help global businesses and startups to transform ideas into <span class="primary-text">excellent digital products that drive results.</span>
+          <h1 class="heading-11 block" data-animation="animate__pulse">We help global businesses and startups to transform ideas into <span class="primary-text">excellent digital products that drive results.</span>
           </h1>
         </div>
       </div>
-      <div class="images-container career">
+      <div class="images-container career block" data-animation="animate__backInDown">
         <div><img
             src="https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/660adbb25d37bb3d19d33e3c_jud-mackrill-Of_m3hMsoAA-unsplash.webp"
             loading="lazy"
@@ -211,16 +222,16 @@
   <div class="dark-bg-with-logo-not-fixed big-text">
     <div class="w-layout-blockcontainer container-5 w-container">
       <div class="subtitle-wrap mt-50">
-        <h5 class="section-subtitle-white">Creating Value for a Better Future<br /></h5>
+        <h5 class="section-subtitle-white block" data-animation="animate__backInDown">Creating Value for a Better Future<br /></h5>
       </div>
-      <div class="mission-text"><span>Based in the heart of Karachi, Pakistan; Torque Software Solutions enjoys access to some of the best emerging IT talent in the country. </span><span
+      <div class="mission-text block" data-animation="animate__slideInLeft"><span>Based in the heart of Karachi, Pakistan; Torque Software Solutions enjoys access to some of the best emerging IT talent in the country. </span><span
           class="text-span-5">Our decision to settle in the busting metropolis has given us the opportunity to celebrate the vibrance, professionalism & drive that the people of this historic city offer.</span> </div> 
           <br>
-          <div class="mission-text"><span>Since our inception, we’ve seen the city adapt and excel in entrepreneurship and academia, becoming the hub of some of the finest educational institutes and rising enterprises in South Asia.</span></div>
+          <div class="mission-text block" data-animation="animate__slideInRight"><span>Since our inception, we’ve seen the city adapt and excel in entrepreneurship and academia, becoming the hub of some of the finest educational institutes and rising enterprises in South Asia.</span></div>
     </div>
   </div>
 
-<section class="section primary-bg-copy">
+<section class="section primary-bg-copy block" data-animation="animate__slideInLeft">
   <div class="w-layout-blockcontainer base-container w-container">
     <div class="text-wrapper-center">
       <h3 class="white-text text-center"></h3>
@@ -252,20 +263,12 @@
   </div>
 </section>
 <br><br><br>
-
-
-
-
-
-      
-
-
-      <h2 class="text-center">What we stand for
+      <h2 class="text-center block" data-animation="animate__zoomIn">What we stand for
       </h2>
       <br>
     </div>
     <div class="base-container w-container">
-      <div class="w-layout-grid location-grid">
+      <div class="w-layout-grid location-grid block" data-animation="animate__slideInRight">
         <div id="w-node-_97549f31-8dfc-6d35-7368-44e29c229085-9c229082" class="location-image-block">
           <div id="w-node-abf7c0ab-89e0-3f09-e85d-41e55410a9de-9c229082" class="locations-wrapper">
             <div class="location-text">
@@ -312,8 +315,8 @@
       </div>
       <br><br>
       <div class="rich-text-style service-benefit-sec w-richtext">
-        <h2>How are we different from other outsourcing companies?</h2>        
-        <div id="w-node-a3cb7bba-c8ac-8224-74c2-303881c181c2-81c181ad" class=" quick-stack-5 wf-layout-layout">
+        <h2 class="block" data-animation="animate__backInDown">How are we different from other outsourcing companies?</h2>        
+        <div id="w-node-a3cb7bba-c8ac-8224-74c2-303881c181c2-81c181ad" class=" quick-stack-5 wf-layout-layout block" data-animation="animate__zoomInUp">
           <div id="w-node-a3cb7bba-c8ac-8224-74c2-303881c181c3-81c181ad" class="w-layout-cell bullet-point-center" style="margin-bottom: -20px;">
             <img src="https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/65eb674d6fbaf499a90bc776_Arrow%20Right.svg"
               loading="lazy" alt="" class="bullet-point-image">
@@ -369,7 +372,7 @@
       <div class="text-wrap-center-block-cta">
         </div>
     </div>
-    <div class="images-gallery mt-70">
+    <div class="images-gallery mt-70" style="margin-top: -80px;">
       <div class="home-2-image-wrap-2"><img
           src="https://cdn.prod.website-files.com/65e9d802e7334ec910a26e59/65e9d803e7334ec910a26fac_CTA Image 1.webp"
           loading="lazy" alt="Our work" class="cta-image rotate-left-10" /></div>
@@ -463,6 +466,33 @@
       </div>
     </div>
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const blocks = document.querySelectorAll('.block');
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5 // Trigger when 50% of the element is in view
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const animationClass = entry.target.getAttribute('data-animation');
+            entry.target.classList.add('animate__animated', animationClass);
+            entry.target.classList.add('appear');
+            observer.unobserve(entry.target); // Stop observing once animated
+          }
+        });
+      }, observerOptions);
+
+      blocks.forEach(block => {
+        observer.observe(block);
+      });
+    });
+  </script>
+
+
   <script src="../d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8d876.js?site=65e9d802e7334ec910a26e59"
     type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
     crossorigin="anonymous"></script>
