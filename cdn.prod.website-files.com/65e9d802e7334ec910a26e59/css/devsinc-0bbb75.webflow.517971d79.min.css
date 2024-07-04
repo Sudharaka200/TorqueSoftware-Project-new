@@ -4415,6 +4415,7 @@ figure {
 
 .nav-item-title.white-link:hover {
   color: var(--primary)
+
 }
 
 .pages-banner {
@@ -9065,11 +9066,11 @@ figure {
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .images-gallery.mt-70 {
-  margin-top: 60px;
+  margin-top: 40px;
   padding-top: 36px;
   display: flex
 }
