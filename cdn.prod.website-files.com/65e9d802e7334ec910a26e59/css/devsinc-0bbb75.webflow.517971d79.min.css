@@ -2217,7 +2217,7 @@ textarea.w-select {
 :root {
   --paragraph-gray: #7987a1;
   --secondary-dark: #042638;
-  --primary: #0ebab1;
+  --primary: #d1050d;
   --light-gray: #fafafa;
   --secondary-light: #0f5377;
   --heading-dark: #042638;
@@ -4418,41 +4418,41 @@ figure {
 
 }
 .scrolling-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: sticky;
-  top: 50%;
-  transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 50%;
+    transform: translateY(-20%);
 }
 
 .scrolling-row {
-  display: flex;
-  width: 100vw;
-  overflow: hidden;
-  margin: 10px 0;
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+    margin: 10px 0;
 }
 
 .scrolling-row img {
-  height: 100px;
-  margin: 0 10px;
-  border: 2px solid #000; /* Added border */
-  border-radius: 5px; /* Optional: rounded corners */
-  transition: transform 0.2s;
+    height: 100px;
+    margin: 0 10px;
+    border: 2px solid #000; /* Added border */
+    border-radius: 5px; /* Optional: rounded corners */
+    transition: transform 0.2s;
 }
 
 .scrolling-row img:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .right-scroll {
-  transform: translateX(0%);
-  transition: transform 0.5s;
+    transform: translateX(0%);
+    transition: transform 0.5s;
 }
 
 .left-scroll {
-  transform: translateX(0%);
-  transition: transform 0.5s;
+    transform: translateX(0%);
+    transition: transform 0.5s;
 }
 
 .pages-banner {
