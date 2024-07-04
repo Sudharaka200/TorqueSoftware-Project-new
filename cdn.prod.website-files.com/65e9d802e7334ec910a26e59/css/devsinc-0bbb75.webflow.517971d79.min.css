@@ -4417,6 +4417,43 @@ figure {
   color: var(--primary)
 
 }
+.scrolling-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scrolling-row {
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.scrolling-row img {
+  height: 100px;
+  margin: 0 10px;
+  border: 2px solid #000; /* Added border */
+  border-radius: 5px; /* Optional: rounded corners */
+  transition: transform 0.2s;
+}
+
+.scrolling-row img:hover {
+  transform: scale(1.2);
+}
+
+.right-scroll {
+  transform: translateX(0%);
+  transition: transform 0.5s;
+}
+
+.left-scroll {
+  transform: translateX(0%);
+  transition: transform 0.5s;
+}
 
 .pages-banner {
   background-color: var(--primary);
