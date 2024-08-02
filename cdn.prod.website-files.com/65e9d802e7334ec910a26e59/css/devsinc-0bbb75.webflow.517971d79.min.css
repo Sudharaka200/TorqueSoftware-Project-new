@@ -13447,6 +13447,12 @@ figure {
 .paragraph-14 {
   display: inline
 }
+.aboutus-back-colour{
+  background-color: #fff;
+  background-image: linear-gradient(to bottom, var(--white-50), var(--white-50)), linear-gradient(180deg, var(--white)32%, var(--primary)72%);
+  padding-top: 80px;
+  padding-bottom: 60px
+}
 
 .pricing-section {
   background-color: #fff;
