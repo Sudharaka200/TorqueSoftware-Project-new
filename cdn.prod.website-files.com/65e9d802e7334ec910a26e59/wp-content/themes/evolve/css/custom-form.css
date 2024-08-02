@@ -1,0 +1,380 @@
+.dev-form {
+    padding: 4% 12%;
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.inputs-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.left-inputs,
+.right-inputs {
+    width: 50%
+}
+
+.inputs-wrapper input,
+.dev-form textarea {
+    border-radius: 7px;
+    background-color: #F7F6FB !important;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+}
+
+.inputs-wrapper input::placeholder,
+.dev-form textarea::placeholder {
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.dev-form textarea {
+    height: 165px;
+    resize: none;
+}
+
+.upload-file-container {
+    position: relative;
+    height: 50px;
+    margin-top: 21px;
+}
+
+.form-response-container {
+    position: relative;
+    height: 45px;
+    margin-top: 21px;
+    display: none;
+}
+
+.form-response {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 7px;
+    height: 45px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+    animation: returnBtn 2s ease-in 1 running 3s forwards;
+}
+
+@keyframes returnBtn {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.send-success {
+    display: none;
+    background: #D0FFDB;
+    color: rgba(0, 0, 0, 0.45);
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.send-error {
+    display: none;
+    background: #f86868;
+    color: white;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-file-btn {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    background: #F7F6FB;
+    border-radius: 7px;
+    height: 45px;
+    color: rgba(0, 0, 0, 0.45);
+    padding: 12px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.uploaded-file-wrapper {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    background-color: #D0FFDB;
+    text-align: center;
+    border-radius: 7px;
+    color: rgba(20, 105, 74, 0.4);
+    align-items: center;
+}
+
+.preview {
+    width: 95%;
+    margin: auto 10px;
+}
+
+.remove-file {
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    margin: 0 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-image: url('/custom-software-development/wp-content/themes/evolve/images/game-dev/delete.png');
+}
+
+.hidden-upload-input {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    width: 85%;
+    border-radius: 7px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.allow-contact {
+    margin: 20px 0;
+    font-size: 12px;
+}
+
+.checkbox__input {
+    display: none;
+}
+
+.checkbox__input:checked+.checkbox__label::after {
+    transform: scale(1.5);
+}
+
+.checkbox__label {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.checkbox__label::before {
+    content: "";
+    align-self: flex-start;
+    flex: 0 0 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 2px solid #f1f1f1cd;
+}
+
+.checkbox__label::after {
+    transition: transform 0.5s ease 0s;
+    content: "\2713";
+    position: absolute;
+    transform: scale(0);
+    color: #44c79f;
+    left: 8px;
+    top: 0;
+}
+
+.form-input-container {
+    position: relative;
+    min-height: 65px;
+}
+
+.form-textarea-container {
+    position: relative;
+    min-height: 191px;
+}
+
+.inputs-wrapper input,
+.form-textarea-container textarea {
+    position: absolute;
+    bottom: 0;
+}
+
+.input-error-container {
+    color: #f93e3e;
+    padding-left: 27px;
+}
+
+.dev-form .game-sbmt-button {
+    margin: auto;
+    width: 270px;
+    height: 47px;
+    background: linear-gradient(180deg, #0DAE7D 0%, #0A9F72 100%) !important;
+    border-radius: 5px;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    border: none !important;
+    display: block;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.spinner {
+    display: none;
+    height: 45px;
+    width: 45px;
+    border-left: 3px solid #11a173;
+    border-bottom: 3px solid #11a173;
+    border-right: 3px solid #11a173;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+    margin: auto;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .form-title {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .inputs-wrapper .form-input-container {
+        min-height: 48px;
+    }
+    .dev-form .form-textarea-container {
+        min-height: 114px;
+    }
+    .inputs-wrapper {
+        gap: 15px;
+    }
+    .dev-form .input-error-container {
+        font-size: 10px;
+        padding-left: 13px;
+    }
+    .inputs-wrapper input,
+    .dev-form textarea {
+        font-size: 10px;
+        padding: 8px 14px;
+        border-radius: 4px
+    }
+    .dev-form textarea {
+        height: 96px;
+    }
+    .upload-file-container {
+        height: 30px;
+        margin-top: 13px;
+    }
+    .upload-file-btn {
+        height: 30px;
+        padding: 8px;
+        font-size: 12px;
+        border-radius: 4px;
+    }
+    .upload-file-container .uploaded-file-wrapper,
+    .upload-file-container .hidden-upload-input {
+        height: 30px;
+        border-radius: 4px;
+        font-size: 10px;
+    }
+    .uploaded-file-wrapper .remove-file {
+        height: 27px;
+        width: 27px;
+    }
+    .dev-form .form-response-container {
+        margin-top: 15px;
+        height: 30px;
+    }
+    .form-response-container .form-response {
+        height: 30px;
+        border-radius: 4px;
+    }
+    .thx-msg {
+        font-size: 12px;
+        vertical-align: middle;
+    }
+    .dev-form .allow-contact {
+        margin: 10px 0;
+    }
+    .checkbox__label {
+        font-size: 14px;
+    }
+    .dev-form .game-sbmt-button {
+        width: 145px;
+        height: 27px;
+        font-size: 11px !important;
+    }
+}
+
+#mobile-title {
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .form-title {
+        display: none;
+    }
+    #mobile-title {
+        display: initial;
+        color: white;
+        text-align: center;
+        margin: 15px 0;
+    }
+    .title-wrapper h2 {
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .dev-form {
+        padding: 4% 4% 9% 4%;
+    }
+    .inputs-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .dev-form .form-textarea-container {
+        min-height: 160px;
+    }
+    .inputs-wrapper input,
+    .dev-form textarea {
+        margin-bottom: 5px;
+    }
+    .left-inputs,
+    .right-inputs {
+        width: 100%
+    }
+    .dev-form textarea {
+        height: 135px;
+    }
+    .uploaded-file-wrapper {
+        font-size: 13px;
+    }
+    .thx-msg {
+        font-size: 12px;
+    }
+    .dev-form .allow-contact {
+        margin: 12px 0;
+        font-size: 10px;
+    }
+    .spinner {
+        height: 40px;
+        width: 40px;
+    }
+    .dev-form .game-sbmt-button {
+        width: 80%;
+        height: 40px;
+        font-size: 16px;
+    }
+    .form-response-container {
+        height: 40px;
+        margin-top: 0;
+    }
+}
