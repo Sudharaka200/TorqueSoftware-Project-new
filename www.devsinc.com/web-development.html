@@ -44,22 +44,12 @@
       .appear {
         opacity: 1; /* Show when the animation starts */
       }
-      @media screen and (max-width: 400px) {
-    .dev-process__column {
-        min-width: 100%;
-        margin: 5px 0;
-    }
-    
-    .dev-process__wrapper {
-        flex-direction: column;
-    }
+      @media (max-width: 768px) {
+            .dev-process__wrapper {
+                display: inline;
+            }
+          }
 
-
-    .dev-process-image img {
-        width: 100%;
-    }
-}
-  
     </style>
   <script src="../ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script
@@ -246,6 +236,7 @@
                 </ul>
               </aside>
             </div> -->
+          
             <div class="grey-container" >
               <div class="our-services-container">
                   <div class="title-wrapper">
@@ -280,6 +271,7 @@
                             <p class="dev-process-description">Software Development</p> 
                           </div>
                         </div>
+                        <br>
                         <div class="dev-process__column">
                             <div class="dev-process__column-item">
                                 <div class="dev-process-image">
